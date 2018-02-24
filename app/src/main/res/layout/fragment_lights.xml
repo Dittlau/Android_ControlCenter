@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <Switch
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/light1_on_off"
+        android:padding="5dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_below="@id/toolbar"
+        android:layout_alignParentStart="true"
+        android:text="@string/room1"/>
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/light_seekbar1"
+        android:padding="5dp"
+        android:layout_below="@id/toolbar"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/light1_on_off"
+        android:max="100" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_progress_local"
+        android:padding="5dp"
+        android:layout_below="@id/light_seekbar1"
+        android:layout_alignParentStart="true"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Local progress"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progress_app_value"
+        android:padding="5dp"
+        android:layout_below="@id/light_seekbar1"
+        android:layout_toEndOf="@+id/text_progress_local"
+        android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_progress_server"
+        android:padding="5dp"
+        android:layout_below="@id/light_seekbar1"
+        android:layout_toEndOf="@+id/progress_app_value"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Server progress"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progress_server_value"
+        android:padding="5dp"
+        android:layout_below="@id/light_seekbar1"
+        android:layout_toEndOf="@+id/text_progress_server"
+        android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+
+
+    <Switch
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/light2_on_off"
+        android:padding="5dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_below="@id/text_progress_local"
+        android:layout_alignParentStart="true"
+        android:text="HUE tester 1"/>
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/light_seekbar2"
+        android:padding="5dp"
+        android:layout_below="@id/text_progress_local"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@id/light2_on_off"
+        android:max="100"/>
+
+    <Switch
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/light3_on_off"
+        android:padding="5dp"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:layout_below="@id/light2_on_off"
+        android:layout_alignParentStart="true"
+        android:text="HUE tester 2"/>
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/light_seekbar3"
+        android:padding="5dp"
+        android:layout_below="@id/light_seekbar2"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@id/light3_on_off"
+        android:max="100"/>
+
+</RelativeLayout>

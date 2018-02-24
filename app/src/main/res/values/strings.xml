@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Control Center</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings2?</string>
+
+
+    <string name="room1">Stue</string>
+    <string name="room2">Soveværelse</string>
+    <string name="room3">Køkken</string>
+    <string name="room4">Gang</string>
+    <string name="room5">Badeværelse</string>
+
+    <!-- HTTP resources -->
+
+    <string name="IP_hue">http://192.168.0.11</string>
+    <string name="IP_raspberry">http://192.168.0.8</string>
+    <string name="IP_arduino">http://192.168.0.9</string>
+
+
+    <!-- HUE resources -->
+
+    <string name="Hue_light_command">/api/CQNICTnNY5a0I41Tn1siapqSNSi1hz-uNmjVAt9n/lights</string>
+
+
+</resources>
